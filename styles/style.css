@@ -282,6 +282,7 @@ facts styles start
 .facts {
     padding: var(--padding-primary);
 }
+
 .features-section-title {
     margin: 0 0 18px 15px;
     font-size: 36px;
@@ -289,7 +290,8 @@ facts styles start
     position: relative;
     font-weight: 700;
 }
-.fact-description, .sponsors-tex{
+
+.fact-description {
     font-size: 14px;
     margin: 10px 0;
     line-height: 20px;
@@ -301,6 +303,7 @@ facts styles start
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 60px;
+    margin-top: 20px;
 }
 
 
@@ -316,16 +319,19 @@ facts styles start
     color: var(--dark-two);
     transition: var(--transition-03);
 }
+
 .fact-icon-box:hover {
     background-color: var(--primary-color-light);
     color: var(--primary-color);
-    transform:  scale(110%);
+    transform: scale(110%);
 }
+
 .fact-icon-box .fact-numbers {
     font-size: 30px;
     margin: 5px 0 0;
     padding: 10px 0;
 }
+
 .fact-info {
     font-size: 16px;
     color: var(--dark-three);
@@ -333,4 +339,40 @@ facts styles start
 
 /* =========================
 facts styles ends
+========================= */
+
+
+/* =========================
+sponsor styles ends
+========================= */
+.sponsor-section {
+    padding: var(--padding-primary);
+    text-align: center;
+}
+
+.sponsor-description {
+    font-size: 14px;
+    margin: 0 auto;
+    line-height: 20px;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.sponsor-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.sponsor-logos img {
+    height: 30px;
+    filter: grayscale();
+}
+
+
+/* =========================
+sponsor styles ends
 ========================= */
