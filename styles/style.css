@@ -31,8 +31,13 @@
     --transition-02: all .2s ease;
     --transition-03: all .3s ease;
     --transition-04: all .4s ease;
+}
 
-
+.section-title {
+    font-size: 36px;
+    line-height: 40px;
+    position: relative;
+    font-weight: 700;
 }
 
 /* button default design */
@@ -218,7 +223,6 @@ Feature styles start
     line-height: 40px;
     position: relative;
     font-weight: 700;
-
 }
 
 .features-section-title::after {
@@ -268,4 +272,65 @@ Feature styles start
 
 /* =========================
 Feature styles ends
+========================= */
+
+
+/* =========================
+facts styles start
+========================= */
+
+.facts {
+    padding: var(--padding-primary);
+}
+.features-section-title {
+    margin: 0 0 18px 15px;
+    font-size: 36px;
+    line-height: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.fact-description, .sponsors-tex{
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+
+.fact-incons {
+    /* padding: var(--padding-secondary); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
+}
+
+
+.fact-icon-box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--dark-two);
+    transition: var(--transition-03);
+}
+.fact-icon-box:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    transform:  scale(110%);
+}
+.fact-icon-box .fact-numbers {
+    font-size: 30px;
+    margin: 5px 0 0;
+    padding: 10px 0;
+}
+.fact-info {
+    font-size: 16px;
+    color: var(--dark-three);
+}
+
+/* =========================
+facts styles ends
 ========================= */

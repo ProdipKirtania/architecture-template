@@ -34,7 +34,7 @@
 
     /* quick list section media query */
     .quick-list {
-        padding: var(--mobile-primary-paddinge);
+        padding: var(--mobile-primary-padding);
         flex-direction: column;
         margin-top: 40px;
         gap: 20px;
@@ -52,7 +52,7 @@
 
 /* feature media query */
 .features-section {
-    padding: var(--primary-padding-mobile);
+    padding: var(--mobile-primary-padding);
     flex-direction: column;
     margin: 20px 0;
 }
@@ -74,6 +74,25 @@
 .feature-card h3 {
     font-size: 22px;
     line-height: 24px;
+}
+
+/* facts media query */
+.facts {
+    padding: var(--mobile-primary-padding);
+}
+
+.fact-incons {
+    padding: var(--mobile-primary-padding);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+}
+
+.fact-numbers {
+    font-size: 36px;
+}
+
+.fact-info {
+    font-size: 20px;
 }
 
 
