@@ -27,38 +27,20 @@
 
 .btn {
     padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
     font-weight: 700;
     background-color: var(--primary-color);
-    border: 0;
-    border-radius: 5px;
     color: var(--white);
     position: relative;
     cursor: pointer;
     z-index: 1;
 }
 .btn:hover {
-    background-color: var(--dark-one);
-    transition: var(--transition-04);
-    color: var(--primary-color);
-    
-}
-
-/* .btn::after {
-    content: "";
-    height: 100%;
-    width: 0;
-    position: absolute;
-    background-color: var(--dark-one);
-    left: 0;
-    top: 0;
-    border-radius: inherit;
-    z-index: -2;
+    color: var(--white);
+    background-color: #131313;
     transition: var(--transition-03);
-
 }
-.btn:hover:after {
-   width: 100%;
-} */
 
 
 
