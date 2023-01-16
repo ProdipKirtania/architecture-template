@@ -1,33 +1,33 @@
-
 /* ============== 
     Universal style
 =============== */
-*{
+* {
     margin: 0;
-    padding: 0;;
+    padding: 0;
+    ;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
 
-:root{
+:root {
     /* color palate */
     --primary-color: #FF900E;
-    --primary-color-opacity: rgba(255, 144, 14, 0.1);
-    --dark-one: #131313
-    --dark-two: #424242;
+    --primary-color-light: rgba(255, 144, 14, 0.1);
+    --dark-one: #131313 --dark-two: #424242;
     --dark-three: #727272;
     --black: #000;
     --white: #fff;
 
     /* default padding */
-    --primary-padding : 50px 220px 30px;
+    --padding-primary: 50px 220px 30px;
+    --padding-secondary : 50px 240px 30px;
 
     /* transitions */
     --transition-01: all .1s ease;
     --transition-02: all .2s ease;
-    --transition-03: all .3s linear;
-    --transition-04: all .4s linear;
-    --transition: all .5s linear;
+    --transition-03: all .3s ease;
+    --transition-04: all .4s ease;
+
 }
 
 /* button default design */
@@ -42,6 +42,7 @@
     cursor: pointer;
     z-index: 1;
 }
+
 .btn:hover {
     color: var(--white);
     background-color: #131313;
@@ -49,13 +50,22 @@
 }
 
 
+.text-dark {
+    font-weight: 700;
+    color: var(--dark-one);
+}
+.text-bold {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
 
 /* ==============
 Header section style start
 =============== */
 .header {
-    padding: var(--primary-padding);
-    background-color: var(--primary-color-transparent);
+    padding: var(--padding-primary);
+    background-color: var(--primary-color-light);
 }
 
 /* naviagtion bar style*/
@@ -74,16 +84,17 @@ Header section style start
     border-radius: 5px;
     /* line-height: 52px; */
 }
-.nav > ul {
+
+.nav>ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.nav> ul li a{
+.nav>ul li a {
     text-decoration: none;
-    color: var(--dark-02);
+    color: var(--dark-two);
 }
 
 /* header content style */
@@ -106,3 +117,56 @@ Header section style start
     width: 100%;
     margin-top: 30px;
 }
+/* ==============
+Header section styles end
+=============== */
+
+/* =========================
+Quick list styles start
+========================= */
+.quick-list {
+    padding: var(--padding-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quick-list-images {
+    max-width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.quick-list-img {
+    overflow: hidden;
+    border-radius: 8px;
+}
+.quick-list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-04);
+
+}
+.quick-list-img:hover img {
+    transform: scale(120%);
+
+}
+
+.quick-list-info {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.quick-list-title {
+    font-size: 32px;
+    color: var(--dark-three);
+}
+
+.quick-list-description {
+    margin: 20px 0;
+}
+/* *************************
+Quick list styles end
+************************** */
