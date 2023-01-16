@@ -1,0 +1,36 @@
+
+/* media query for mobile screen  */
+@media only screen and (max-width :576px){
+    
+/* header section media query */
+    
+    .header {
+        padding: var(--primary-padding-mobile);
+    }
+    .nav {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .nav .logo {
+        font-size: 18px;
+        line-height: 52px;
+    }
+    
+    .nav > ul {
+        flex-direction: column;
+        margin-top: 5px;
+        gap: 5px;
+    } 
+    
+    .header-content .header-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .header-content .header-description {
+        margin: 20px 0;
+    }
+
+
+    
+}

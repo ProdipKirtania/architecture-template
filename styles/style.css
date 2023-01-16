@@ -1,4 +1,7 @@
-/* Universal style */
+
+/* ============== 
+    Universal style
+=============== */
 *{
     margin: 0;
     padding: 0;;
@@ -7,6 +10,7 @@
 }
 
 :root{
+    /* color palate */
     --primary-color: #FF900E;
     --primary-color-opacity: rgba(255, 144, 14, 0.1);
     --dark-one: #131313
@@ -15,9 +19,10 @@
     --black: #000;
     --white: #fff;
 
-    /*  */
+    /* default padding */
     --primary-padding : 50px 220px 30px;
 
+    /* transitions */
     --transition-01: all .1s ease;
     --transition-02: all .2s ease;
     --transition-03: all .3s linear;
@@ -25,6 +30,7 @@
     --transition: all .5s linear;
 }
 
+/* button default design */
 .btn {
     padding: 16px 30px;
     border: none;
@@ -61,8 +67,11 @@ Header section style start
 }
 
 .nav .logo {
-    color: var(--dark-01);
+    color: var(--dark-one);
     font-size: 35px;
+    background-color: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 5px;
     /* line-height: 52px; */
 }
 .nav > ul {
