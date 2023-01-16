@@ -110,6 +110,34 @@
         gap: 20px;
     }
 
+    /* blog section media query */
+    .blog-section {
+        /* margin-left: 0 100px; */
+        padding-left: 40px;
+    }
+
+    .blog-wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    aside {
+        flex-direction: column;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    aside .navigation {
+        width: 60%;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100%;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
     /* footer media query */
     .footer {
         padding: var(--mobile-primary-padding);
