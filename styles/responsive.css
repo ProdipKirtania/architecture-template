@@ -32,6 +32,24 @@
         margin: 20px 0;
     }
 
+/* quick list section media query */
+.quick-list {
+    padding: var(--primary-padding-mobile);
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.quick-list-images {
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.quick-list-info {
+    width: 100%;
+    text-align: center;
+}
+
 
 
 }
