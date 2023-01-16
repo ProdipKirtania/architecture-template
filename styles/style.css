@@ -372,7 +372,26 @@ sponsor styles ends
     filter: grayscale();
 }
 
-
 /* =========================
 sponsor styles ends
+========================= */
+
+
+/* =========================
+fotter styles start
+========================= */
+.footer {
+    padding: var(--padding-primary);
+}
+
+.footer p {
+    padding: 25px 0;
+    background-color: var(--primary-color-light);
+    font-size: 16px;
+    color: var(--dark-three);
+    text-align: center;
+}
+
+/* =========================
+fotter styles ends
 ========================= */
